@@ -396,6 +396,10 @@ PRODUCT_COPY_FILES += \
 # Properties
 include $(LOCAL_PATH)/properties/default.mk
 
+# Remove unwanted Gapps packages
+PRODUCT_PACKAGES += \
+    RmPackages
+
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
