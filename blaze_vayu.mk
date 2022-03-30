@@ -14,6 +14,11 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 # Inherit common ProjectBlaze configurations
 $(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
+# Blaze Official Stuff
+BLAZE_BUILD_TYPE := OFFICIAL
+BLAZE_MAINTAINER := clhexftw
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 PRODUCT_NAME := blaze_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
